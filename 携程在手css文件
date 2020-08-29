@@ -1,0 +1,341 @@
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 540px;
+    background: #f2f2f2;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+    -webkit-text-size-adjust: 100% !important;
+    -webkit-tap-highlight-color: transparent;
+    height: 2000px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.search-index {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 540px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.search {
+    flex: 1;
+    line-height: 34px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+}
+
+.search a {
+    color: #666;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search a::after {
+    position: absolute;
+    top: 5px;
+    left: 19px;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 100%;
+    background: url(../images/sprite.png) no-repeat 15px 7px;
+    background-size: 30px auto;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    color: rgb(84, 137, 236);
+}
+
+.user::before {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(../images/sprite.png) no-repeat 1px -36px;
+    background-size: 21px auto;
+    margin: 5px auto;
+    margin-bottom: 0;
+}
+
+/* 焦点图模块 */
+.focus {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.focus img {
+    width: 100%;
+}
+
+/* 导航栏模块 */
+.local-nav {
+    position: relative;
+    display: flex;
+    height: 70px;
+    margin: -20px 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.local-nav .one {
+    width: 40px;
+    height: 40px;
+    background: url(../images/one5.png) 0 0 no-repeat;
+    background-size: 40px auto;
+
+}
+
+.local-nav .tow {
+    width: 40px;
+    height: 40px;
+    background: url(../images/one5.png) 0 -40px no-repeat;
+    background-size: 40px auto;
+
+}
+
+.local-nav .san {
+    width: 40px;
+    height: 40px;
+    background: url(../images/one5.png) 0 -80px no-repeat;
+    background-size: 40px auto;
+
+}
+
+.local-nav .si {
+    width: 40px;
+    height: 40px;
+    background: url(../images/one5.png) 0 -120px no-repeat;
+    background-size: 40px auto;
+
+}
+
+.local-nav .wu {
+    width: 40px;
+    height: 40px;
+    background: url(../images/one5.png) 0 -160px no-repeat;
+    background-size: 40px auto;
+}
+
+nav {
+    margin: 35px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background-color: rgb(87, 70, 70);
+}
+
+.nav-common a {
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-common:nth-child(1) {
+    background: linear-gradient(to right, #fa5956, #fb8650 54%);
+}
+
+.nav-common:nth-child(2) {
+    background: linear-gradient(to right, #428df7, #80d2f8);
+}
+
+.nav-common:nth-child(3) {
+    background: linear-gradient(to right, #34c2aa, #6cd557);
+}
+
+.nav-common:nth-child(2) {
+    margin: 5px 0;
+}
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-items:nth-child(-n+2) {
+    border-right: 2px solid white;
+}
+
+.nav-items a {
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+
+.nav-items:nth-child(1) a {
+    border: 0;
+}
+
+.nav-common .nav-items:nth-child(1) a {
+    background: url(../images/jiudian1.png) no-repeat -24px 23px;
+    background-size: 178px auto;
+}
+
+.nav-common-2 {
+    flex: 1;
+    text-align: center;
+    line-height: 88px;
+}
+
+.nav-common-2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-common-2:nth-child(-n+3) {
+    border-right: 2px solid white;
+}
+
+.nav-common .nav-common-2:nth-child(1) a {
+    background: url(../images/feiji.png) no-repeat -46px 23px;
+    background-size: 178px auto;
+}
+
+.nav-common-3 {
+    text-align: center;
+    line-height: 88px;
+}
+
+.nav-common-3:nth-child(1) {
+    flex: 2;
+}
+
+.nav-common-3:nth-child(1) a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/lvyou.png) no-repeat;
+    background-size: 178px auto;
+}
+
+
+.nav-common-3:nth-child(2) {
+    flex: 1;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.nav-common-3:nth-child(3) {
+    flex: 3;
+}
+
+/* subnav模块  */
+.subnav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.subnav li {
+    flex: 20%;
+}
+
+.subnav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav li [class^=subnav-icon] {
+    width: 28px;
+    height: 28px;
+    background-size: 28px auto;
+    margin: 5px 0;
+}
+
+.subnav-icon-1 {
+    background: url(../images/sprite2.png) no-repeat;
+}
+
+.subnav-icon-2 {
+    background: url(../images/sprite2.png) no-repeat 0 -28px;
+}
+
+.subnav-icon-3 {
+    background: url(../images/sprite2.png) no-repeat 0 -56px;
+}
+
+.subnav-icon-4 {
+    background: url(../images/sprite2.png) no-repeat 0 -84px;
+}
+
+.subnav-icon-5 {
+    background: url(../images/sprite2.png) no-repeat 0 -112px;
+}
+
+.subnav-icon-6 {
+    background: url(../images/sprite2.png) no-repeat 0 -140px;
+}
+
+.subnav-icon-7 {
+    background: url(../images/sprite2.png) no-repeat 0 -168px;
+}
+
+.subnav-icon-8 {
+    background: url(../images/sprite2.png) no-repeat 0 -196px;
+}
+
+.subnav-icon-9 {
+    background: url(../images/sprite2.png) no-repeat 0 -224px;
+}
+
+.subnav-icon-10 {
+    background: url(../images/sprite2.png) no-repeat 0 -252px;
+}
